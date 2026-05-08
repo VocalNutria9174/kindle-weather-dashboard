@@ -1,17 +1,20 @@
-// var api_locParams = "lat=50.1243111&lon=14.4901953";
-var api_locParams = "q=Columbus";
-var api_appId = "87a3874e2b9b459bb1cf066343207776";
+var api_locParams = "q=Baltimore";
+
+var api_appId = "0264a07ef00385ae3a6ea69858c85c52";
 var api_lang = "en"
 var api_units = "imperial"; 
 
 var api_params = null;
+
+// Forecast type: "hour" (3h steps) or "daily"
+var forecastType = "hour";
 
 // refresh time in miliseconds (default 30 mins)
 var refreshTime = 30 * 60 * 1000;
 
 // Browser in kindle paperwhite doesn't support rotation.
 // You can override with this parameter 'll' and 'lr' for landscape left/right, 'up' for upside down.
-//var rotation = "ll";
+var rotation = "ll";
 
 // You can set night mode,
 // "auto" - by sunrise and sunset,
@@ -23,5 +26,4 @@ var night_mode = "off";
 // You can set custom GMT offset, in format "+08:00".
 // You may need to set it again after winter/summer time change.
 // Null is default
-var utcOffset = "-04:00";
-
+var utcOffset = null
